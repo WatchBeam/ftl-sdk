@@ -158,7 +158,7 @@ int main(int argc, char **argv)
 
     if (!init_video(&h264_handle, video_input))
     {
-      printf("Faild to open video file\n");
+      printf("Failed to open video file\n");
       return -1;
     }
   }
@@ -394,7 +394,7 @@ static void *ftl_status_thread(void *data)
         continue;
       }
 
-    /*dont reconnect for speed test*/
+    /*don't reconnect for speed test*/
     if (speedtest_duration) {
       continue;
     }
